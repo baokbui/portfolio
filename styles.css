@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Courier', monospace;
+}
+
+/* HEADER */
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid #000;
+    z-index: 100;
+}
+
+/* NAVIGATION */
+.nav-center {
+    display: flex;
+    gap: 0;
+    margin: 0 auto;
+}
+
+.nav-center p{
+    border-right: 1px solid #000;
+    padding: 0 1rem;
+}
+
+.nav-center p:first-child {
+    padding-left: 0;
+}
+
+.nav-center p:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+#nav-contact {
+    padding: 0.5rem 1.25rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: black;
+}
+
+/* ABOUT */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 3rem 6rem;
+}
+
+.about {
+    max-width: 800px;
+}
+
+.about p {
+    margin: 0rem;
+}
+
+.about-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    padding-top: 3rem;
+}
+
+#about-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+#my-name {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.my-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.my-socials img{
+    width: 24px;
+    height: 24px;
+}
+
+/* EDUCATION & TECH STACK */
+.edu-tech {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4rem;
+    padding: 0rem 6rem;
+}
+
+.education img{
+    width: 16px;
+    height: 16px;
+}
+
+.degree {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: nowrap;
+}
+
+.degree p {
+    margin: 0rem;
+}
+
+.school {
+    margin: 0.15rem 0 0;
+    font-size: 0.85rem;
+    padding-left: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    margin-left: 5rem;
+}
+
+.languages, .frontend, .backend, .data, .tools, .databases {
+    display:flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.tech span {
+    margin: 0rem;
+}
+
+.tech img {
+    width: auto;
+    height: 30px;
+    vertical-align: middle;
+}
