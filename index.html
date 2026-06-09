@@ -9,18 +9,18 @@
     </head>
     <body>
         <!-- HEADER -->
-        <div class="header">
-            <p><strong>Bao Khoi Bui</strong></p>
-            <div class="nav-center">
-                <p>About</p> 
-                <p>Projects</p>
-                <p>Resume</p>
-            </div>
-            <p id="nav-contact">Contact Me</p>
-        </div>
+        <header class="header">
+            <h1 style="margin: 0; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.5px;">Bao Khoi Bui</h1>
+            <nav class="nav-center">
+                <p><a href="#about" style="text-decoration: none; color: inherit;">About</a></p> 
+                <p><a href="#projects" style="text-decoration: none; color: inherit;">Projects</a></p>
+                <p><a href="#resume" style="text-decoration: none; color: inherit;">Resume</a></p>
+            </nav>
+            <button id="nav-contact">Contact Me</button>
+        </header>
 
         <!-- ABOUT -->
-        <section class="about-container">
+        <section class="about-container" id="about">
             <div class="about">
                 <h1>Software Developer</h1>
                 <p>I'm Khoi, a recent CS grad from the University of Houston and a current graduate student at the University of Houston Clear Lake pursuing Software Engineering. I gravitate toward systems work — interpreters, engines, the kind of deep, under-the-hood pieces most people never look at. I also enjoy building robust, scalable applications, and I've spent time working with datasets and machine learning along the way. I also leverage AI tools to enhance my development workflow and boost productivity. As a side, I like to make games and would love to pursue a career in it in the long run.</p>
@@ -29,17 +29,17 @@
                 <img id="about-img"src="assets/images/me.jpg" alt="A photo of me">
                 <h2 id="my-name">Bao Khoi Bui</h2>
                 <div class="my-socials">
-                    <a href="mailto:khoibui0224@gmail.com" aria-label="Email">
-                        <img src="assets/icons/mail.svg">
+                    <a href="mailto:khoibui0224@gmail.com" aria-label="Email" title="Email">
+                        <img src="assets/icons/mail.svg" alt="Email icon">
                     </a>
-                    <a href="https://instagram.com/k_bui0224" aria-label="Instagram">
-                        <img src="assets/icons/instagram.svg">
+                    <a href="https://github.com/baokbui" aria-label="Github" title="GitHub" target="_blank">
+                        <img src="assets/icons/github.svg" alt="GitHub icon">
                     </a>
-                    <a href="https://github.com/baokbui" aria-label="Github">
-                        <img src="assets/icons/github.svg">
+                    <a href="https://linkedin.com/in/bkbui" aria-label="LinkedIn" title="LinkedIn" target="_blank">
+                        <img src="assets/icons/linkedin.svg" alt="LinkedIn icon">
                     </a>
-                    <a href="https://linkedin.com/in/bkbui" aria-label="LinkedIn">
-                        <img src="assets/icons/linkedin.svg">
+                    <a href="https://instagram.com/k_bui0224" aria-label="Instagram" title="Instagram" target="_blank">
+                        <img src="assets/icons/instagram.svg" alt="Instagram icon">
                     </a>
                 </div>
             </div>
@@ -71,34 +71,24 @@
                     <img src="assets/icons/r.svg" title="R" aria-label="R">
                     <img src="assets/icons/sql.svg" title="SQL" aria-label="SQL">
                 </div>
-                <div class="frontend">
-                    <span>Frontend:</span>
+                <div class="frontend-backend">
+                    <span>Frontend/Backend:</span>
                     <img src="assets/icons/html.svg" title="HTML" aria-label="HTML">
                     <img src="assets/icons/css.svg" title="CSS" aria-label="CSS">
-                </div>
-                <div class="backend">
-                    <span>Backend:</span>
                     <img src="assets/icons/nodejs.svg" title="Node.js" aria-label="Node.js">
                 </div>
-                <div class="data">
-                    <span>Data/ML:</span>
+                <div class="data-tools">
+                    <span>Data/Tools:</span>
                     <img src="assets/icons/numpy.svg" title="Numpy", aria-label="Numpy">
                     <img src="assets/icons/pandas.svg" title="Pandas", aria-label="Pandas">
                     <img src="assets/icons/matplotlib.svg" title="Matplotlib", aria-label="Matplotlib">
                     <img src="assets/icons/scikit-learn.svg" title="Scikit-learn", aria-label="Scikit-learn">
-                </div>
-                <div class="tools">
-                    <span>Tools:</span>
                     <img src="assets/icons/git.svg" title="Git" aria-label="Git">
                     <img src="assets/icons/jupyter.svg" title="Jupyter" aria-label="Jupyter">
                     <img src="assets/icons/vscode.svg" title="VS Code" aria-label="VS Code">
-                </div>
-                <div class="databases">
-                    <span>Databases:</span>
                     <img src="assets/icons/pgsql.svg" title="PostgreSQL" aria-label="PostgreSQL">
                 </div>
             </div>
         </section>
-
     </body>
 </html>
