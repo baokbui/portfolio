@@ -23,7 +23,7 @@
         <section class="about-container" id="about">
             <div class="about">
                 <h1>Software Developer</h1>
-                <p>I'm Khoi, a recent CS grad from the University of Houston and a current graduate student at the University of Houston Clear Lake pursuing Software Engineering. I gravitate toward systems work — interpreters, engines, the kind of deep, under-the-hood pieces most people never look at. I also enjoy building robust, scalable applications, and I've spent time working with datasets and machine learning along the way. I also leverage AI tools to enhance my development workflow and boost productivity. As a side, I like to make games and would love to pursue a career in it in the long run.</p>
+                <p>I'm Khoi, a recent CS grad from the University of Houston and a current graduate student at the University of Houston Clear Lake pursuing Software Engineering. I gravitate toward systems work — interpreters, engines, the kind of deep, under-the-hood pieces most people never look at. I also enjoy building robust, scalable applications, and I've spent time working with datasets and machine learning along the way. I also leverage AI tools to enhance my development workflow and boost productivity. As a side, I like to make games.</p>
             </div>
             <div class="about-profile">
                 <img id="about-img"src="assets/images/me.jpg" alt="A photo of me">
@@ -123,58 +123,82 @@
                     <div class="project-content">
                         <h3>Personal Portfolio</h3>
                         <a href="https://github.com/baokbui/portfolio" target="_blank" class="project-github-link">GitHub</a>
-                        <p class="project-description">A showcase about myself, my skills, experiences, and projects. You're looking at it right now!</p>
+                        <p class="project-description">A showcase about myself, my skills, experiences, and projects. You're looking at it right now! Technologies used: HTML, CSS, JavaScript</p>
                     </div>
                 </div>
 
                 <!-- PROJECT 2 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Project name">
+                        <img src="assets/images/p2img.jpg" alt="Bookmark Manager">
                     </div>
                     <div class="project-content">
-                        <h3>Project Name</h3>
-                        <a href="#" target="_blank" class="project-github-link">GitHub</a>
-                        <p class="project-description">Brief description of your project. Explain what it does, the problem it solves, and what technologies you used.</p>
+                        <h3>Bookmark Manager</h3>
+                        <a href="https://github.com/baokbui/bookmark-manager" target="_blank" class="project-github-link">GitHub</a>
+                        <p class="project-description">In Progress - Manage and keep track of your favorite shows, movies, books, and more with this simple bookmark manager.</p>
                     </div>
                 </div>
 
                 <!-- PROJECT 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/images/project3.jpg" alt="Project name">
+                        <img src="assets/images/p3img.jpg" alt="Real-Time Chat Application">
                     </div>
                     <div class="project-content">
-                        <h3>Project Name</h3>
-                        <a href="#" target="_blank" class="project-github-link">GitHub</a>
-                        <p class="project-description">Brief description of your project. Explain what it does, the problem it solves, and what technologies you used.</p>
+                        <h3>Real-Time Chat Application</h3>
+                        <a href="https://github.com/baokbui/real-time-chat" target="_blank" class="project-github-link">GitHub</a>
+                        <p class="project-description">In Progress - A simple real-time chat application that allows users to communicate in real-time. Technologies used: React, Node.js, Socket.io</p>
                     </div>
                 </div>
 
                 <!-- PROJECT 4 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/images/project4.jpg" alt="Project name">
+                        <img src="assets/images/p4img.jpg" alt="Fuel Quote System">
                     </div>
                     <div class="project-content">
-                        <h3>Project Name</h3>
-                        <a href="#" target="_blank" class="project-github-link">GitHub</a>
-                        <p class="project-description">Brief description of your project. Explain what it does, the problem it solves, and what technologies you used.</p>
+                        <h3>Fuel Quote System</h3>
+                        <a href="https://github.com/baokbui/Fuel-App" target="_blank" class="project-github-link">GitHub</a>
+                        <p class="project-description">A system for managing fuel delivery quotes. Users can register, complete a profile, request fuel quotes with dynamic pricing, and view their order history. Technologies used: HTML, CSS, JavaScript, Node.js, Express.js, PostgreSQL</p>
                     </div>
                 </div>
 
                 <!-- PROJECT 5 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/images/project5.jpg" alt="Project name">
+                        <img src="assets/images/p5img.jpg" alt="Python Interpreter">
                     </div>
                     <div class="project-content">
-                        <h3>Project Name</h3>
-                        <a href="#" target="_blank" class="project-github-link">GitHub</a>
-                        <p class="project-description">Brief description of your project. Explain what it does, the problem it solves, and what technologies you used.</p>
+                        <h3>Python Interpreter</h3>
+                        <a href="https://github.com/baokbui/python-interpreter" target="_blank" class="project-github-link">GitHub</a>
+                        <p class="project-description">A simple Python interpreter implemented in C++. Allows users to write and execute Python code using a C++ compiler. Technologies used: C++</p>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="contact-container" id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="mailto:khoibui0224@gmail.com" method="POST" enctype="text/plain">
+                <div class="name-field">
+                    <div class="first-name">
+                        <label for="firstname">First Name *</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="last-name">
+                        <label for="lastname">Last Name *</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                </div>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button id="button" type="submit">Send Message</button>
+            </form>
         </section>
     </body>
 </html>
