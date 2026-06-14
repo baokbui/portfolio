@@ -12,18 +12,20 @@
         <header class="header">
             <h1 style="margin: 0; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.5px;">Bao Khoi Bui</h1>
             <nav class="nav-center">
-                <p><a href="#about" style="text-decoration: none; color: inherit;">About</a></p> 
-                <p><a href="#experience" style="text-decoration: none; color: inherit;">Experience</a></p>
-                <p><a href="#projects" style="text-decoration: none; color: inherit;">Projects</a></p>
+                <p><a href="#about">About</a></p>
+                <p><a href="#edu-tech-cert">Education & Skills</a></p>
+                <p><a href="#experience">Experience</a></p>
+                <p><a href="#projects">Projects</a></p>
             </nav>
-            <button id="nav-contact">Contact Me</button>
+            <a id="nav-contact" href="#contact">Contact Me</a>
         </header>
 
         <!-- ABOUT -->
         <section class="about-container" id="about">
             <div class="about">
+                <p>Hi, I'm Khoi!</p>
                 <h1>Software Developer</h1>
-                <p>I'm Khoi, a recent CS grad from the University of Houston and a current graduate student at the University of Houston Clear Lake pursuing Software Engineering. I gravitate toward systems work — interpreters, engines, the kind of deep, under-the-hood pieces most people never look at. I also enjoy building robust, scalable applications, and I've spent time working with datasets and machine learning along the way. I also leverage AI tools to enhance my development workflow and boost productivity. As a side, I like to make games.</p>
+                <p>I'm a CS grad from the University of Houston with a passion for building things close to the metal. My work spans systems programming — including a Python interpreter built in C++ — to full-stack web applications. I care about writing clean, efficient code and understanding how things work under the hood. As a side, I like to make games. Currently pursuing my MS in Software Engineering at UHCL and looking for SWE internships where I can contribute and keep growing.</p>
             </div>
             <div class="about-profile">
                 <img id="about-img"src="assets/images/me.jpg" alt="A photo of me">
@@ -35,7 +37,7 @@
                     <a href="https://github.com/baokbui" aria-label="Github" title="GitHub" target="_blank">
                         <img src="assets/icons/github.svg" alt="GitHub icon">
                     </a>
-                    <a href="https://linkedin.com/in/bkbui" aria-label="LinkedIn" title="LinkedIn" target="_blank">
+                    <a href="https://linkedin.com/in/baokbui" aria-label="LinkedIn" title="LinkedIn" target="_blank">
                         <img src="assets/icons/linkedin.svg" alt="LinkedIn icon">
                     </a>
                     <a href="https://instagram.com/k_bui0224" aria-label="Instagram" title="Instagram" target="_blank">
@@ -45,50 +47,80 @@
             </div>
         </section>
 
-        <!-- EDUCATION & TECH STACK -->
-        <section class="edu-tech" id="edu-tech">
-            <div class="education">
-                <h2>Education</h2>
-                <div class="degree">
-                    <img src="assets/icons/education.svg">
-                    <p>MS Software Engineering</p>
+        <!-- EDUCATION, TECH STACK, CERTIFICATIONS, GITHUB ACTIVITY -->
+        <section class="edu-tech-cert" id="edu-tech-cert">
+            <div class="edu-tech">
+                <div class="education">
+                    <h2>Education</h2>
+                    <div class="degree">
+                        <img src="assets/icons/education.svg">
+                        <p>MS Software Engineering</p>
+                    </div>
+                    <p class="school">University of Houston - Clear Lake</p>
+                    <div class="degree">
+                        <img src="assets/icons/education.svg">
+                        <p>BS Computer Science</p>
+                    </div>
+                    <p class="school">University of Houston</p>
                 </div>
-                <p class="school">University of Houston - Clear Lake</p>
-                <div class="degree">
-                    <img src="assets/icons/education.svg">
-                    <p>BS Computer Science</p>
+                <div class="tech">
+                    <h2>Tech Stack</h2>
+                    <div class="languages">
+                        <span>Languages:</span>
+                        <img src="assets/icons/cplusplus.svg" title="C++" aria-label="C++">
+                        <img src="assets/icons/javascript.svg" title="Javascript" aria-label="Javascript">
+                        <img src="assets/icons/lua.svg" title="Lua" aria-label="Lua">
+                        <img src="assets/icons/python.svg" title="Python" aria-label="Python">
+                        <img src="assets/icons/r.svg" title="R" aria-label="R">
+                        <img src="assets/icons/sql.svg" title="SQL" aria-label="SQL">
+                    </div>
+                    <div class="frontend-backend">
+                        <span>Frontend/Backend:</span>
+                        <img src="assets/icons/html.svg" title="HTML" aria-label="HTML">
+                        <img src="assets/icons/css.svg" title="CSS" aria-label="CSS">
+                        <img src="assets/icons/nodejs.svg" title="Node.js" aria-label="Node.js">
+                    </div>
+                    <div class="data-tools">
+                        <span>Data/Tools:</span>
+                        <img src="assets/icons/numpy.svg" title="Numpy", aria-label="Numpy">
+                        <img src="assets/icons/pandas.svg" title="Pandas", aria-label="Pandas">
+                        <img src="assets/icons/matplotlib.svg" title="Matplotlib", aria-label="Matplotlib">
+                        <img src="assets/icons/scikit-learn.svg" title="Scikit-learn", aria-label="Scikit-learn">
+                        <img src="assets/icons/git.svg" title="Git" aria-label="Git">
+                        <img src="assets/icons/jupyter.svg" title="Jupyter" aria-label="Jupyter">
+                        <img src="assets/icons/vscode.svg" title="VS Code" aria-label="VS Code">
+                        <img src="assets/icons/pgsql.svg" title="PostgreSQL" aria-label="PostgreSQL">
+                    </div>
                 </div>
-                <p class="school">University of Houston</p>
             </div>
-            <div class="tech">
-                <h2>Tech Stack</h2>
-                <div class="languages">
-                    <span>Languages:</span>
-                    <img src="assets/icons/cplusplus.svg" title="C++" aria-label="C++">
-                    <img src="assets/icons/javascript.svg" title="Javascript" aria-label="Javascript">
-                    <img src="assets/icons/lua.svg" title="Lua" aria-label="Lua">
-                    <img src="assets/icons/python.svg" title="Python" aria-label="Python">
-                    <img src="assets/icons/r.svg" title="R" aria-label="R">
-                    <img src="assets/icons/sql.svg" title="SQL" aria-label="SQL">
+            <div class="cert-github">
+                <div class="certifications">
+                    <h2>Certifications</h2>
+                    <div class="cert-item">
+                        <img src="assets/icons/google.svg">
+                        <a href="https://coursera.org/share/595176561e572baa4eb5af820d548d08" target="_blank" title="Google AI Essentials">Google AI Essentials</a>
+                    </div>
+                    <p class="cert-issuer">Google</p>
+                    <div class="cert-item">
+                        <img src="assets/icons/googlecloud.svg">
+                        <a href="https://coursera.org/share/5824336ead69abfb252aeec028761ea1" target="_blank" title="Introduction to Generative AI">Introduction to Generative AI</a>
+                    </div>
+                    <p class="cert-issuer">Google Cloud</p>
+                    <div class="cert-item">
+                        <img src="assets/icons/ibm.svg">
+                        <div class="multi-cert">
+                            <a href="https://www.credly.com/badges/fdab68fb-9f73-47ea-85b1-64197aebba50/public_url" target="_blank" title="Web Development Fundamentals">Web Development Fundamentals</a>
+                            <a href="https://coursera.org/share/7869cd90f1eafd8d7d01de385f0da3c6" target="_blank" title="Developing Back-End Apps with Node.js and Express">Developing Back-End Apps with Node.js and Express</a>
+                            <a href="https://courses.cognitiveclass.ai/certificates/7398a22a354c4813a0b68793a84a82da" target="_blank" title="SQL and Relational Databases 101">SQL and Relational Databases 101</a>
+                        </div>
+                    </div>
+                    <p class="cert-issuer">IBM</p>
                 </div>
-                <div class="frontend-backend">
-                    <span>Frontend/Backend:</span>
-                    <img src="assets/icons/html.svg" title="HTML" aria-label="HTML">
-                    <img src="assets/icons/css.svg" title="CSS" aria-label="CSS">
-                    <img src="assets/icons/nodejs.svg" title="Node.js" aria-label="Node.js">
+                <div class="github-stats">
+                    <h2>GitHub Activity</h2>
+                    <img src="https://github-readme-stats.vercel.app/api?username=baokbui&show_icons=true&theme=dark&hide_border=true" alt="Github Stats">
                 </div>
-                <div class="data-tools">
-                    <span>Data/Tools:</span>
-                    <img src="assets/icons/numpy.svg" title="Numpy", aria-label="Numpy">
-                    <img src="assets/icons/pandas.svg" title="Pandas", aria-label="Pandas">
-                    <img src="assets/icons/matplotlib.svg" title="Matplotlib", aria-label="Matplotlib">
-                    <img src="assets/icons/scikit-learn.svg" title="Scikit-learn", aria-label="Scikit-learn">
-                    <img src="assets/icons/git.svg" title="Git" aria-label="Git">
-                    <img src="assets/icons/jupyter.svg" title="Jupyter" aria-label="Jupyter">
-                    <img src="assets/icons/vscode.svg" title="VS Code" aria-label="VS Code">
-                    <img src="assets/icons/pgsql.svg" title="PostgreSQL" aria-label="PostgreSQL">
-                </div>
-            </div>
+            </div>    
         </section>
 
         <!-- EXPERIENCE -->
