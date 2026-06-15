@@ -915,4 +915,5 @@ body {
     padding: 0.5rem 0.75rem;
     border-radius: 8px;
     max-width: 100%;
+    background-color: var(--accent-color);
 }
