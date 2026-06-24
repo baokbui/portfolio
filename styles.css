@@ -1,14 +1,9 @@
 :root {
-    --primary-color: #e0edd6;
-    --accent-color: #8fd18f;
-    --light-green: #3a4d3c;
-    --border-color: #4a5d4a;
-    --text-secondary: #b5c4aa;
-    --background-color: #1a2518;
-}
-
-html {
-    scroll-behavior: smooth;
+    --primary-color: #1a1a1a;       /* black text */
+    --accent-color: #0076DF;        /* muted blue-gray for links/accents */
+    --text-secondary: #444444;      /* dark gray for secondary text */
+    --background-color: #ffffff;    /* base white */
+    --border-color: #d0d0d0;        /* light gray borders */
 }
 
 body {
@@ -16,7 +11,15 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     color: var(--primary-color);
     line-height: 1.6;
-    background-color: var(--background-color);
+    background-image:
+        radial-gradient(circle at 30% 70%, rgba(173, 216, 230, 0.35), transparent 60%),
+        radial-gradient(circle at 70% 30%, rgba(255, 182, 193, 0.4), transparent 60%);
+    background-attachment: fixed;  
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* RESPONSIVE DESIGN */
@@ -537,11 +540,12 @@ body {
     margin: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: #151913;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
     color: var(--primary-color);
     border-bottom: 1px solid var(--border-color);
     z-index: 100;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* NAVIGATION */
@@ -573,23 +577,23 @@ body {
     padding-right: 1.25rem;
 }
 
-.nav-center p:hover {
-    color: var(--accent-color);
-}
-
 .nav-center a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
 }
 
+.nav-center p:hover{
+    color: var(--accent-color)
+}
+
 #nav-contact {
     display: inline-block;
     text-decoration: none;
 }
 
 #nav-contact {
-    padding: 0.625rem 1.5rem;
+    padding: 0.5rem 1rem;
     border: 2px solid var(--accent-color);
     border-radius: 6px;
     color: var(--accent-color);
@@ -646,7 +650,6 @@ body {
     object-fit: cover;
     object-position: center bottom;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    border: 3px solid var(--light-green);
     transition: transform 0.3s ease;
 }
 
@@ -673,14 +676,13 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 8px;
-    background-color: var(--light-green);
+    background-color: transparent;
     transition: all 0.3s ease;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--primary-color);
 }
 
 .my-socials a:hover {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: var(--primary-color);
     transform: translateY(-3px);
 }
 
@@ -704,7 +706,6 @@ body {
     padding: 4rem 6rem;
     max-width: 1400px;
     margin: 0 auto;
-    background-color: var(--light-green);
 }
 
 .edu-tech {
@@ -814,13 +815,13 @@ body {
 .cert-item a {
     margin: 0;
     font-weight: 500;
-    color: var(--accent-color);
+    color: var(--primary-color);
     transition: color 0.2s ease;
     text-decoration: none;
 }
 
 .cert-item a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
@@ -865,17 +866,16 @@ body {
 
 .experience-card {
     padding: 2rem;
-    background-color: #2a3d2c;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     min-width: 0;
 }
 
 .experience-card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     transform: translateX(4px);
 }
 
@@ -921,7 +921,6 @@ body {
     padding: 4rem 6rem;
     max-width: 1400px;
     margin: 0 auto;
-    background-color: var(--light-green);
 }
 
 .projects-container h2 {
@@ -940,16 +939,15 @@ body {
 .project-card {
     display: flex;
     flex-direction: column;
-    background-color: #2a3d2c;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .project-card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     transform: translateY(-6px);
 }
 
@@ -957,7 +955,6 @@ body {
     width: 100%;
     height: 200px;
     overflow: hidden;
-    background-color: var(--light-green);
 }
 
 .project-image img {
@@ -1036,9 +1033,22 @@ body {
     justify-content: flex-start;
 }
 
-#firstname, #lastname, #email, #message, #button {
+#firstname, #lastname, #email, #message {
     padding: 0.5rem 0.75rem;
     border-radius: 8px;
     max-width: 100%;
-    background-color: var(--text-secondary);
+    background-color: transparent;
+}
+
+#button {
+    align-self: center;
+    background-color: transparent;
+    border-radius: 8px;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+#button:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
 }
